@@ -3,13 +3,13 @@ package com.zhang.hadoop;
 public class Utils {
    private static final String BASE_PATH = "file:///D:\\IDEAcode\\hadoop_bayes\\data\\output\\";
 
-    public static final String BASE_TRAINDATA_PATH = "file:///D:\\IDEAcode\\hadoop_bayes\\data\\input\\training";
+    public static final String BASE_TRAINDATA_INPUTPATH = "file:///D:\\IDEAcode\\hadoop_bayes\\data\\input\\training";
 
-//    public static final String BASE_TESTDATA_PATH = "file:///D:\\IDEAcode\\hadoop_bayes\\data\\input\\test";
+    public static final String BASE_TESTDATA_INPUTPATH = "file:///D:\\IDEAcode\\hadoop_bayes\\data\\input\\testing";
 
     public static final String SEQUENCE_TRAIN_DATA = BASE_PATH + "SequenceTrainData";
 //
-//    public static final String SEQUENCE_INPUT_TEST_DATA = BASE_PATH + "InputSequenceTestData";
+    public static final String SEQUENCE_TEST_DATA = BASE_PATH + "SequenceTestData";
 //
     public static final String DOCs_NUM_OF_EACH_CLASS_OUTPUT_PATH = BASE_PATH + "DocsNumOfEachClass";
 //

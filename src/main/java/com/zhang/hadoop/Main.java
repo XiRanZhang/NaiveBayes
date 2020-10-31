@@ -10,9 +10,13 @@ public class Main {
 //        //converter small file in training data set in sequence file
 //        conf.set("INPUTPATH",Utils.BASE_TRAINDATA_PATH);
 //        conf.set("OUTPUTPATH",Utils.SEQUENCE_TRAIN_DATA);
+
+        //converter small files in test data in sequence file
+//        conf.set("INPUTPATH",Utils.BASE_TESTDATA_INPUTPATH);
+//        conf.set("OUTPUTPATH",Utils.SEQUENCE_TEST_DATA);
 //        SmallFilesToSequenceFileConverter sequenceFileConverter = new SmallFilesToSequenceFileConverter();
 //        ToolRunner.run(conf, sequenceFileConverter, args);
-//
+
 //        //calculate the number of files in each class
 //        conf.set("INPUTPATH",Utils.SEQUENCE_TRAIN_DATA);
 //        conf.set("OUTPUTPATH",Utils.DOCs_NUM_OF_EACH_CLASS_OUTPUT_PATH);
@@ -25,10 +29,8 @@ public class Main {
 //        TermsNumOfEachClass termsNumOfEachClass=new TermsNumOfEachClass();
 //        ToolRunner.run(conf,termsNumOfEachClass,args);
 
-        //converter small files in test data in sequence file
-
         //calculate bayes function
-        conf.set("INPUTPATH",Utils.SEQUENCE_TRAIN_DATA);
+        conf.set("INPUTPATH",Utils.SEQUENCE_TEST_DATA);
         conf.set("OUTPUTPATH",Utils.RESULT_OF_CLASSFICATION);
         NaiveBayes naiveBayes =new NaiveBayes();
         ToolRunner.run(conf,naiveBayes,args);
